@@ -4,3 +4,13 @@ spring:
     url: jdbc:mysql://localhost:3306/mybatisplus_db
     username: root
     password: 123456
+
+mybatis-plus:
+  global-config:
+    db-config:
+      # 逻辑删除的字段名
+      logic-delete-field: deleted
+      # 逻辑删除字面值：未删除为0
+      logic-not-delete-value: 0
+      # 逻辑删除字面值：删除为1
+      logic-delete-value: 1
